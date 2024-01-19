@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>OROMIA DEVELOPMENT ASSOCIATION STUDENT REGISTRATION FORM</title>
+    <link rel="stylesheet" href="https://kit.fontawesome.com/9d54f2870e.css"crossorign="anonymous">
+    <style>
+        *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+display: flex;
+justify-content: center;
+align-items: center;
+
+background-size: 80%;
+background-origin: border-box;
+background-position: center;
+background-repeat: no-repeat;
+
+}
+.container{
+width: 100%;
+max-width: cover;
+background: rgb(26, 209, 200);
+padding: 25px;
+margin:5px 5px;
+border-radius: 20px;
+box-shadow: inset -700px 10px 80px rgb(212, 6, 144);
+}
+.form-title{
+    font-size: 26px;
+    font-family: Algerian;
+    font-weight: 800;
+    text-align: center;
+    padding-bottom: 6px;
+    color: white;
+    text-shadow: 5px 5px 5px black;
+    border-bottom: solid 10px white;
+    background-color: rgb(255, 10, 10);
+    border-radius: 10px;
+}
+.main-user-info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+.user-input-box{
+    justify-content: end;
+}
+.user-input-box{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    padding-bottom: 15px;
+}
+.user-input-l{
+    display: flex;
+    width: 50%;
+}
+.user-input-box label{
+    width: 95%;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 5px 0;
+}
+.user-input-box input{
+    height: 40px;
+    width: 95%;
+    border-radius: 7px;
+    outline: none;
+    border: 1px solid grey;
+    padding: 0 10px;
+}
+.gender-title{
+color: white;
+font-size: 24px;
+font-weight: 600;
+border-bottom: 1px solid white;
+}
+.Upper{
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+    padding-top: 15px;
+    }
+.Upper Input{
+    display: block;
+    margin-top: 10px;
+    
+    width: 25%;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    color: rgb(143, 136, 136);
+    background: whitesmoke;
+}
+.gender-category{
+    margin: 15px 0;
+    color: white;
+}
+.gender-category label{
+    padding: 0 20px 0 5px;
+}
+.gender-category label,
+.gender-category input,
+.form-submit-btn input{
+    cursor: pointer;
+}
+.form-next-btn{
+    margin: px;
+}
+.form-next-btn input{
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 40px;
+    padding: 10px;
+    border: none;
+    border-radius: 13px;
+    color: rgb(157, 255, 0);
+    background: rgb(255, 10, 10);
+}
+.form-next-btn-previous a{
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 40px;
+    padding: 10px;
+    border: none;
+    border-radius: 13px;
+    color: rgb(157, 255, 0);
+    background: rgb(255, 10, 10);
+    }
+.form-next-btn a:hover{
+    background: rgb(0, 87, 7);
+    color: rgb(6, 133, 252);
+}
+@media(max-width: 600px){
+    .container{min-width: 280px;}
+}
+.user-input-box{
+    margin-bottom: 12px;
+    width: 100%;
+}
+.user-input-box:nth-child(2n){
+    justify-content: 0;
+}
+.gender-category{
+display: flex;
+justify-content: space-between;
+width: 100%;
+}
+.main-user-info{
+    max-width: fit-content;
+    overflow: auto;
+    
+}
+.main-user-info::-webkit-scrollbar{
+    width: 0;
+    height: 0;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="form-title">Sinior Students registration Form</h1>
+        <form action="register">
+            
+                <div class="user-input-box">
+                    <label for="firstname">First Name</label>
+                    <input type="text"
+                        id="firstname"
+                        name="firstname"
+                        placeholder="Enter First Name " required/>
+                </div>
+                    <div class="user-input-box">
+                        <label for="middlename">Middle Name</label>
+                        <input type="text"
+                        id="middleName"
+                        name="middle Name"
+                        placeholder="Enter Middle Name "required/>
+                    </div>
+                    <div class="user-input-box">
+                        <label for="lastname">Last Name</label>
+                        <input type="text"
+                        id="last Name"
+                        name="last Name"
+                        placeholder="Enter Last Name "required/>
+                    </div>
+                    <div class="user-input-box">
+                        <label for="experience">Age</label>
+                        <input type="number" min="14" max="80"  value="" class="form-input">
+                      </div>
+                      <div class="user-input-box">
+                        <label class="label-title">Gender :</label>
+                        <div class="user-input-l">
+                          <label for="male"><input type="radio" name="gender" value="male" id="male"> Male</label>
+                          <label for="female"><input type="radio" name="gender" value="female" id="female"> Female</label>
+                        </div>
+                    </div>
+                    <div class="user-input-box">
+                        <label class="label-title">Grade :</label>
+                        <input type="number"
+                        id="Grade"
+                        name="Grade"
+                        placeholder="10th"required/>
+                        <div type="number" min="10" max="12"  value="10th" class="user-input-l">
+                    </div>
+                        </div>
+                    <div class="user-input-box">
+                        <label for="phonenumber">Phone Number</label>
+                        <input type="number"
+                            id="phonenumber"
+                            name="phonenumber"
+                            placeholder="Enter phone number "required/>
+                    </div>
+                    <div class="user-input-box">
+                        <label for="email">Email(option)</label>
+                        <input type="text"
+                        id="email"
+                        name="email"
+                        placeholder="Example@gmail.com"/>
+                    </div>
+                    <div class="user-input-box">
+                        <label for="password">Password</label>
+                        <input type="password"
+                            id="password"
+                            name="password"
+                            placeholder="Enter Password "/>
+                    </div>
+                    <div class="user-input-box">
+                        <label for="confirmpassword">Confirm Password</label>
+                        <input type="password"
+                            id="password"
+                            name="confirmpassword"
+                            placeholder="ConfirmPassword "required/>
+                    </div>
+                    <div class="container">
+                        <div class="Upper"><label for="choose-file" class="label-title">Upload Your Profile Picture</label><br>
+                            <input type="file" id="choose-file" size="80">
+                          </div>
+                        </div>
+                    <div class="user-input-box">
+                        <div class="gender-details-box">
+                            <div class="Upper"><label class="gender-title">Your Hobbies</label></div>
+                            <div>
+                              <label><input type="checkbox" value="read">Reading</label>
+                              <label><input type="checkbox" value="game">play Games</label>
+                              <label><input type="checkbox" value="Web">Music</label>
+                              <label><input type="checkbox" value="iOS">Sports</label>
+                              <label><input type="checkbox" value="watch">Movies</label>
+                            </div>
+                        </div>
+                </div>
+        </form>
+            <form action="register">
+                  <DIV class="Upper"><h1 class="form-title">PARENTS/GUARDIANS INFORMATION</h1></DIV>
+                  <div class="user-input-box">
+                    <label for="firstname">Father Name</label>
+                    <input type="text"
+                        id="firstname"
+                        name="firstname"
+                        placeholder="Enter First Name " required/>
+                </div>
+                    <div class="user-input-box">
+                        <label for="middlename">Mother Name</label>
+                        <input type="text"
+                        id="middleName"
+                        name="middle Name"
+                        placeholder="Enter Middle Name "required/>
+                    </div>
+                    <div class="user-input-box">
+                        <label for="Emergency">Emergency Call</label>
+                        <input type="text"
+                        id="last Name"
+                        name="last Name"
+                        placeholder="Enter Last Name "required/>
+                    </div>
+                    
+                  <div class="user-input-box">
+                    <label for="phonenumber">Phone Number</label>
+                    <input type="number"
+                        id="phonenumber"
+                        name="phonenumber"
+                        placeholder="Enter phone number "required/>
+                </div>
+                <div class="user-input-box">
+                    <label for="email">Email(option)</label>
+                    <input type="text"
+                    id="email"
+                    name="email"
+                    placeholder="Example@gmail.com"/>
+                </div>
+                <div class="user-input-box">
+                    <label for="password">Password</label>
+                    <input type="password"
+                        id="password"
+                        name="password"
+                        placeholder="Enter Password "/>
+                </div>
+                  <div class="Upper">
+                    <div class="container"><div class="Upper" >
+                        <label for="choose-file" class="label-title">Upload Your Parents Profile Picture</label><br>
+                        <input type="file" id="choose-file" size="80">
+                      </div></div>
+                    
+                    <div class="Upper"><label for="choose-file" class="label-title">Text Message</label></div>
+                    <textarea class="form-input" rows="10" cols="100" style="height:auto" placeholder="Type text here"></textarea>
+                </div>
+                <div class="form-next-btn">
+                    <input type="submit" value="REGISTER">
+                </div>
+            </form>
+        </div>
+</body>
+</html>
